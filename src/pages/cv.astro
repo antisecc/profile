@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Higher Secondary Education"
+      subtitle="2019 to 2021 at Presentation Convent School, Navi Mumbai, India"
+    />
+    <TimeLineElement
+      title="B.Tech Computer Science Specialization in Cyber Security and Digital Forensics"
+      subtitle="2021 to 2025 at Vellore Institute of Technology, India"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Security learner and practitioner"
+      subtitle="From Nov 2021 to Present"
+    >
+    I have started my learning journey in late of year 2021, coming from a non IT backgroud from my High School, learning everything from scratch was uphill battle for me
+    <br> <br>
+    I started researching for resources, learnig materials, concepts and platforms to practice.
+    <br> <br>
+    Eventually by mid 2022 I got myself comfortable with Computers and got an adequate amount of knowledge in computer networking and basic security principles
+    and concepts
+    <br> <br>
+    By late 2022 I started my learning journey towards security domain and explored a lot about various subdomains within this field
+    <br> <br>
+    By early 2023 I got a decent knowledge about Security Operations, Red teaming and Penetration testing
+    <br> <br>
+    From then on I put on knowledge to test by participating in various CTFs, challenges and Pwnbox challenges, I learned many things along the way
+
+    </TimeLineElement>
+    <TimeLineElement
+      title="Security Intern "
+      subtitle="From April 2023 to July 2023 at Cyber Secured India"
+    >
+    Got experience and training on web security testing and network testing and reporting on the same
+
+    </TimeLineElement>
+    <TimeLineElement
+      title="Security Intern"
+      subtitle="From June 2023 to August 2023 at Senselearner Technologies"
+    >
+    Worked as part of a team to Security Operations Centre and made report on APTs and CTI for company assets
+
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certified Network Security Practitioner </a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Fortinet NSE Certification </a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> API Security from apisecuniversity </a>
+    </li>
+     <li>
+      <a href="#" target="_blank"> EC Council: EHE NDE </a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Security testing</li>
+    <li>VAPT</li>
+    <li>API testing</li>
+    <li>Scripting</li>
+    <li>Computer</li>
+    <li>Network Security</li>
+  </ul>
+</BaseLayout>
