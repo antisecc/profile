@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://antisecc.github.io',
-  base: 'profile',
+  base: '/profile',
   integrations: [mdx(), sitemap(), tailwind()]
 });
