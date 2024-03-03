@@ -1,6 +1,6 @@
 ---
 title: "Attended"
-description: "Notes on Attended machine on HackTheBox"
+description: "Notes on Attended machine on HackTheBox, P.S. 153rd rank :D"
 pubDate: "Mar 1 2024"
 heroImage: "/Attended.png"
 
@@ -14,7 +14,7 @@ Attended is an insane difficulty OpenBSD machine that presents a variety of diff
 
 - Nmap scan
 
-```
+```bash
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 8.0 (protocol 2.0)
 | ssh-hostkey: 
@@ -71,7 +71,7 @@ To begin with, we would start with testing SMTP on the machine, to do that we wo
 
 So we would start off by sending a test mail and start tcpdump to see the flow the connections
 
-```
+```bash
 $swaks --to guly@attended.htb --from nonsec@attended.htb --server 10.129.225.66
 === Trying 10.129.225.66:25...
 === Connected to 10.129.225.66.
@@ -108,7 +108,7 @@ $swaks --to guly@attended.htb --from nonsec@attended.htb --server 10.129.225.66
 
 Surely, after a minute or so we do get a connection request 
 
-```
+```bash
 $ tcpdump -i tun0
 .
 .
