@@ -2,7 +2,7 @@
 title: "Attended"
 description: "Notes on Attended machine on HackTheBox"
 pubDate: "Mar 1 2024"
-heroImage: "/itemPreview.png"
+heroImage: "/Attended.png"
 
 ---
 
